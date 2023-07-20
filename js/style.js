@@ -1,9 +1,9 @@
 $(function () {
   $(window).on("scroll", function (e) {
-    console.log(window);
-    console.log(window.scrollY);
+    // console.log(window);
+    // console.log(window.scrollY);
     if (window.scrollY > 300) {
-      console.log("line 6");
+      // console.log("line 6");
       $(".containerParent.forHeader").addClass("toFixed");
     } else {
       $(".containerParent.forHeader").removeClass("toFixed");
@@ -31,21 +31,47 @@ $(function () {
         function (event) {
           var name = $("#name").val();
           var email = $("#email").val();
-          var phoneNum = $("#phoneNumber");
-          console.log(name);
-          if (
-            name.length > 0 &&
-            email.includes(`@gmail.com)`) &&
-            phoneNum.length > 0 &&
-            !phoneNum.include(/[^0-9]/)
-          ) {
+          var phoneNum = $("#phoneNumber").val();
+          console.log(phoneNum);
+          event.preventDefault();
+          // if (
+          //   !name.length &&
+          //   email.includes(`@gmail.com)`) &&
+          //   phoneNum.length > 0 &&
+          //   !phoneNum.include(/[^0-9]/)
+          // ) {
+          //   $("#name").addClass("is-invalid");
+          //   $("#name")[0].setCustomValidity(`invalid name`);
+
+          //   $("#phoneNumber").addClass("is-invalid");
+          //   $("#phoneNumber").setCustomValidity("invalid email");
+          // } else {
+          //   console.log("else");
+          //   return;
+          // }
+
+          if (!name.length) {
             $("#name").addClass("is-invalid");
             $("#name")[0].setCustomValidity(`invalid name`);
-            $("#email").addClass("is-invalid");
+          } else {
+            $("#name").removeClass("is-invalid");
+            $("#name")[0].setCustomValidity(``);
+          }
 
-            $("#email").setCustomValidity("invalid email");
+          if (!email.includes(`@gmail.com`)) {
+            $("#email").addClass("is-invalid");
+            $("#email")[0].setCustomValidity("invalid email");
+          } else {
+            $("#email").removeClass("is-invalid");
+            $("#email")[0].setCustomValidity(``);
+          }
+
+          if (!phoneNum) {
             $("#phoneNumber").addClass("is-invalid");
-            $("#phoneNumber").setCustomValidity("invalid email");
+            $("#phoneNumber")[0].setCustomValidity("invalid phone number");
+          } else {
+            $("#phoneNumber").removeClass("is-invalid");
+            $("#phoneNumber")[0].setCustomValidity(``);
           }
 
           if (!form.checkValidity()) {

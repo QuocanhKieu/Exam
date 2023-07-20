@@ -35,118 +35,115 @@
     <main>
       <div class="containerParent eight py-5" id="form">
         <h1 class="text-center" id="">Đăng Ký Thông Tin Người Dùng</h1>
-        <form action="#" method="post" class="fs-2">
-          <div class="container eight">
-            <div class="row contact first py-5">
-              <div class="col-sm-6 first">
-                <input
-                  class="form-control fs-2"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Tên Của Bạn"
-                  maxlength="50"
-                  required
-                  value=""
-                />
-              </div>
-              <div class="col-sm-6 second">
-                <input
-                  class="form-control fs-2"
-                  type="email"
-                  name="email"
-                  id="email"
-                  value=""
-                  placeholder="Email Của Bạn"
-                />
-              </div>
-            </div>
-            <div class="row three">
-              <div class="col-12">
-                <input
-                  class="p-3 form-control fs-2"
-                  type="text"
-                  name="phone"
-                  id="phoneNumber"
-                  value=""
-                  placeholder="Số Điện Thoại"
-                />
-              </div>
-            </div>
-            <h3 class="fs-1 title">Giới Tính</h3>
-
-            <div class="form-check py-3">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault1"
-                value="Nam"
-                required
-              />
-              <label class="form-check-label" for="flexRadioDefault1">
-                Nam
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault2"
-                value="Nữ"
-                required
-              />
-              <label class="form-check-label" for="flexRadioDefault2">
-                Nữ
-              </label>
-            </div>
-            <h3 class="fs-1 title">Sở Thích</h3>
-            <div class="form-check favorite">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="Chơi Thể Thao"
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                Chơi Thể Thao
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="Xem phim"
-                id="flexCheckChecked"
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Xem phim
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Khác
-              </label>
-            </div>
-            <div class="row contact second py-5">
-              <div class="col">
-                <textarea
-                  class="form-control fs-2 py-5"
-                  name="comment"
-                  id="comment"
-                  rows="6"
-                  placeholder="Miêu Tả Bản Thân"
-                ></textarea>
-              </div>
-            </div>
+        <form action="" class="fs-2 p-5 needs-validation row" novalidate>
+          <div class="col-sm-6 first">
+            <input
+              class="form-control fs-2 my-3"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Tên Của Bạn"
+              maxlength="50"
+              required
+              value=""
+            />
+            <div class="invalid-feedback">Invalid Name.</div>
           </div>
+          <div class="col-sm-6 second">
+            <input
+              class="form-control fs-2 my-3"
+              type="email"
+              name="email"
+              id="email"
+              value=""
+              placeholder="Email Của Bạn"
+            />
+            <div class="invalid-feedback">Invalid Gmail.</div>
+          </div>
+
+          <div class="col-12">
+            <input
+              class="form-control fs-2 my-3"
+              type="tel"
+              name="phone"
+              id="phoneNumber"
+              value=""
+              placeholder="Số Điện Thoại"
+            />
+            <div class="invalid-feedback">Invalid Phone Number.</div>
+          </div>
+
+          <h3 class="fs-1 title">Giới Tính</h3>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+              value="Nam"
+              required
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Nam
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              value="Nữ"
+              required
+            />
+            <label class="form-check-label" for="flexRadioDefault2"> Nữ </label>
+          </div>
+          <h3 class="fs-1 title">Sở Thích</h3>
+          <div class="form-check favorite col-12">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Chơi Thể Thao"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Chơi Thể Thao
+            </label>
+          </div>
+          <div class="form-check col-12">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Xem phim"
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Xem phim
+            </label>
+          </div>
+          <div class="form-check col-12">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Khác
+            </label>
+          </div>
+
+          <div class="col-12">
+            <textarea
+              class="form-control fs-2 my-5"
+              name="comment"
+              id="comment"
+              rows="6"
+              placeholder="Miêu Tả Bản Thân"
+            ></textarea>
+          </div>
+
           <div class="col-12 text-start d-flex justify-content-center">
             <button class="btn btn-primary text-nowrap" type="submit">
               Submit form
