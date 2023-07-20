@@ -64,7 +64,7 @@ $(function () {
           } else {
             console.log("qualified");
             $("form").hide();
-            $("#form").append(`<p>
+            $("#form").append(`<p class="userInfo p-5 fs-2">
               Xin chào ${name}.<br>
               Email của bạn là: ${email}.<br>
               Số điện thoại của bạn là: ${phoneNum}.<br>

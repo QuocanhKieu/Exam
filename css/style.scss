@@ -70,7 +70,6 @@ a {
 }
 
 header {
-  height: 70vh;
   background-image: url("../images/header.jpg");
   background-position: 50% 20%;
   position: relative;
@@ -192,7 +191,7 @@ main {
   div.containerParent.eight {
     font-size: 0.7em;
     margin-block: 0px;
-    max-width: 700px;
+    max-width: 800px;
     margin-inline: auto;
 
     button[type="submit"] {
@@ -208,6 +207,10 @@ main {
           margin-bottom: 20px;
           padding: 10px;
         }
+      }
+      p.userInfo {
+        padding: 30px !important;
+        // font-size: 1.4em;
       }
     }
     button.sendMess {
@@ -236,6 +239,7 @@ main {
 }
 footer {
   div.containerParent.nine {
+    background-color: #6c619655;
     width: 100%;
     div.container.nine {
       p {
@@ -407,7 +411,7 @@ div.toTop {
   }
   div.containerParent.eight {
     font-size: 1.4em !important;
-    margin-block: 80px !important;
+    margin-block: 0px !important;
   }
   #perInfo {
     font-size: 1.2em !important;
@@ -420,6 +424,7 @@ div.toTop {
   }
   header {
     min-height: 600px !important;
+    height: 70vh !important;
   }
   div.containerParent.eight {
     #submitBtn {
