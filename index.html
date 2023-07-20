@@ -50,7 +50,7 @@
             <div class="nameHelper text-primary helper">
               Họ và tên dài không quá 50 ký tự.
             </div>
-            <div class="invalid-feedback">Invalid Name.</div>
+            <div class="invalid-feedback">Tên không hợp lệ..</div>
           </div>
           <div class="col-sm-6 second">
             <input
@@ -64,7 +64,7 @@
             <div class="emailHelper text-primary helper">
               Emai cần chứa hậu tố gmail.com.
             </div>
-            <div class="invalid-feedback">Invalid Gmail.</div>
+            <div class="invalid-feedback">Email không hợp lệ.</div>
           </div>
 
           <div class="col-12">
@@ -73,10 +73,11 @@
               type="tel"
               name="phone"
               id="phoneNumber"
-              value=""
               placeholder="Số Điện Thoại"
+              pattern="^[0-9()+\-.\s]*$"
+              required
             />
-            <div class="invalid-feedback">Invalid Phone Number.</div>
+            <div class="invalid-feedback">Số điện thoại không hợp lệ.</div>
           </div>
 
           <h3 class="fs-1 title">Giới Tính</h3>
@@ -179,7 +180,7 @@
               name="comment"
               id="comment"
               rows="6"
-              placeholder="Miêu Tả Bản Thân"
+              placeholder="Miêu Tả Bản Thân."
             ></textarea>
           </div>
 

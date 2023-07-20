@@ -46,8 +46,8 @@ $(function () {
             $("#email").removeClass("is-invalid");
             $("#email")[0].setCustomValidity("");
           }
-
-          if (!phoneNum) {
+          var phoneReg = /^[0-9()+\-.\s]*$/;
+          if (!phoneNum || !phoneReg.test(phoneNum)) {
             $("#phoneNumber").removeClass("is-valid");
             $("#phoneNumber").addClass("is-invalid");
             $("#phoneNumber")[0].setCustomValidity("invalid phone number");
