@@ -76,7 +76,7 @@ header {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 600px;
+
   &::before {
     content: "";
     position: absolute;
@@ -131,8 +131,9 @@ header {
             color: $buttonPrimary;
           }
         }
+
         a.navbar-brand {
-          font-size: 2.5em;
+          font-size: 2em;
           font-weight: 600;
         }
         button.navbar-toggler {
@@ -147,28 +148,29 @@ header {
     }
   }
   div.containerParent.two {
-    height: 500px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     div.container.two {
       z-index: 0;
-      padding-top: 50px;
+      padding-top: 0px;
       width: fit-content;
     }
     // font-size:;
     h1 {
       padding-top: 40px;
-      font-size: 4em;
+
+      font-size: 2em;
       line-height: 60px;
       font-weight: 700;
       color: #333;
       margin-bottom: 20px;
+
       span.hi {
         display: block;
         width: fit-content;
         margin: auto !important;
+
         font-size: 1.5em;
         margin-bottom: 30px !important;
         color: $buttonSecond;
@@ -187,59 +189,17 @@ header {
 }
 
 main {
-  div.containerParent.seven {
-    margin-block: 80px;
-    h3.testHead {
-      font-size: 1.8em;
-      font-weight: 600;
-      margin-bottom: 80px;
-    }
-    div.container.seven {
-      .row {
-        text-align: start;
-        div.col-md-6 {
-          padding-inline: 30px;
-          margin-bottom: 50px;
-          div.testimonCon {
-            height: 100%;
-            padding: 30px;
-            padding-left: 40px;
-            border: 1px solid $buttonPrimary;
-            position: relative;
-            &::before {
-              content: "";
-              width: 70px;
-              height: 70px;
-              position: absolute;
-              top: 0%;
-              left: 50%;
-              transform: translate(-50%, -60%);
-              border-radius: 50%;
-              border: 1px solid $buttonSecond;
-            }
-            &.first::before {
-              background-image: url(../images/avatar2.jpg);
-              background-size: cover;
-            }
-            &.second::before {
-              background-image: url(../images/avatar3.jpg);
-              background-size: cover;
-            }
-            h3 {
-              color: $buttonPrimary;
-              font-weight: 600;
-              font-size: 1.4em;
-            }
-          }
-        }
-      }
-    }
-  }
   div.containerParent.eight {
-    font-size: 1.5em !important;
-    margin-block: 80px;
+    font-size: 0.7em;
+    margin-block: 0px;
     max-width: 700px;
     margin-inline: auto;
+
+    button[type="submit"] {
+      font-size: 1em !important;
+      width: fit-content !important;
+      padding: 5px 10px;
+    }
     div.container.eight {
       div.row.form {
         input,
@@ -441,8 +401,37 @@ div.toTop {
   div.containerParent.four {
     text-align: center;
   }
-  div.animation {
-    display: unset;
+
+  #banner {
+    font-size: 4em !important;
+  }
+  div.containerParent.eight {
+    font-size: 1.4em !important;
+    margin-block: 80px !important;
+  }
+  #perInfo {
+    font-size: 1.2em !important;
+  }
+  div.container.two {
+    padding-top: 50px;
+  }
+  div.containerParent.two {
+    height: 500px !important;
+  }
+  header {
+    min-height: 600px !important;
+  }
+  div.containerParent.eight {
+    #submitBtn {
+      width: 180px !important;
+      font-size: 1.2em !important;
+      padding: 5px !important;
+    }
+  }
+  nav.navbar {
+    a.navbar-brand {
+      font-size: 2.5em !important;
+    }
   }
 }
 
@@ -504,6 +493,9 @@ div.toTop {
         }
       }
     }
+  }
+  div.animation {
+    display: block;
   }
 }
 

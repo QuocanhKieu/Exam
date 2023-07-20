@@ -67,7 +67,6 @@ header {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 600px;
 }
 header::before {
   content: "";
@@ -120,7 +119,7 @@ header .containerParent.forHeader div.container.forHeader nav.navbar div.navbar-
   color: #6c6196;
 }
 header .containerParent.forHeader div.container.forHeader nav.navbar a.navbar-brand {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 600;
 }
 header .containerParent.forHeader div.container.forHeader nav.navbar button.navbar-toggler {
@@ -132,20 +131,19 @@ header .containerParent.forHeader div.container.forHeader nav.navbar span.navbar
   color: #fff;
 }
 header div.containerParent.two {
-  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header div.containerParent.two div.container.two {
   z-index: 0;
-  padding-top: 50px;
+  padding-top: 0px;
   width: -moz-fit-content;
   width: fit-content;
 }
 header div.containerParent.two h1 {
   padding-top: 40px;
-  font-size: 4em;
+  font-size: 2em;
   line-height: 60px;
   font-weight: 700;
   color: #333;
@@ -171,57 +169,17 @@ header div.containerParent.two button.visitWork {
   width: fit-content;
 }
 
-main div.containerParent.seven {
-  margin-block: 80px;
-}
-main div.containerParent.seven h3.testHead {
-  font-size: 1.8em;
-  font-weight: 600;
-  margin-bottom: 80px;
-}
-main div.containerParent.seven div.container.seven .row {
-  text-align: start;
-}
-main div.containerParent.seven div.container.seven .row div.col-md-6 {
-  padding-inline: 30px;
-  margin-bottom: 50px;
-}
-main div.containerParent.seven div.container.seven .row div.col-md-6 div.testimonCon {
-  height: 100%;
-  padding: 30px;
-  padding-left: 40px;
-  border: 1px solid #6c6196;
-  position: relative;
-}
-main div.containerParent.seven div.container.seven .row div.col-md-6 div.testimonCon::before {
-  content: "";
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  border-radius: 50%;
-  border: 1px solid #4a3c81;
-}
-main div.containerParent.seven div.container.seven .row div.col-md-6 div.testimonCon.first::before {
-  background-image: url(../images/avatar2.jpg);
-  background-size: cover;
-}
-main div.containerParent.seven div.container.seven .row div.col-md-6 div.testimonCon.second::before {
-  background-image: url(../images/avatar3.jpg);
-  background-size: cover;
-}
-main div.containerParent.seven div.container.seven .row div.col-md-6 div.testimonCon h3 {
-  color: #6c6196;
-  font-weight: 600;
-  font-size: 1.4em;
-}
 main div.containerParent.eight {
-  font-size: 1.5em !important;
-  margin-block: 80px;
+  font-size: 0.7em;
+  margin-block: 0px;
   max-width: 700px;
   margin-inline: auto;
+}
+main div.containerParent.eight button[type=submit] {
+  font-size: 1em !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 5px 10px;
 }
 main div.containerParent.eight div.container.eight div.row.form input,
 main div.containerParent.eight div.container.eight div.row.form textarea {
@@ -388,8 +346,32 @@ div.toTop a {
   div.containerParent.four {
     text-align: center;
   }
-  div.animation {
-    display: unset;
+  #banner {
+    font-size: 4em !important;
+  }
+  div.containerParent.eight {
+    font-size: 1.4em !important;
+    margin-block: 80px !important;
+  }
+  #perInfo {
+    font-size: 1.2em !important;
+  }
+  div.container.two {
+    padding-top: 50px;
+  }
+  div.containerParent.two {
+    height: 500px !important;
+  }
+  header {
+    min-height: 600px !important;
+  }
+  div.containerParent.eight #submitBtn {
+    width: 180px !important;
+    font-size: 1.2em !important;
+    padding: 5px !important;
+  }
+  nav.navbar a.navbar-brand {
+    font-size: 2.5em !important;
   }
 }
 @media (min-width: 768px) {
@@ -434,5 +416,8 @@ div.toTop a {
   }
   .toFixed div.navbar-nav a:hover {
     background-color: #fff !important;
+  }
+  div.animation {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
