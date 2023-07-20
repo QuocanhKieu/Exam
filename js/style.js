@@ -27,7 +27,7 @@ $(function () {
           var email = $("#email").val();
           var phoneNum = $("#phoneNumber").val();
 
-          if (!name.length) {
+          if (!name.length && name.length > 50) {
             $("#name").addClass("is-invalid");
             $("#name").removeClass("is-valid");
             $("#name")[0].setCustomValidity("invalid name");
@@ -88,7 +88,6 @@ $(function () {
           form.classList.add("was-validated");
         },
         false
-        
       );
     });
   })();
