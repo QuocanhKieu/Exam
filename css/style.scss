@@ -187,149 +187,7 @@ header {
 }
 
 main {
-  div.containerParent.three {
-    text-align: center;
-    background-color: white;
-    z-index: 2;
-
-    .skill {
-      border: 2px solid $buttonPrimary;
-      border-radius: 30px;
-      margin-bottom: 20px;
-      padding-block: 15px;
-      h3 {
-        font-weight: 800;
-        font-size: 1.3em;
-      }
-    }
-  }
-  div.containerParent.four {
-    margin-block: $marginBlockVal;
-    div.container.four {
-      margin-top: 80px;
-      font-size: 1.1em;
-      div.col-md-4 {
-        background-image: url(../images/man.png);
-        background-size: contain;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        min-height: 400px;
-        margin-bottom: 10px;
-        padding: 0;
-      }
-      div.col-md-8 {
-        p {
-          margin: 0;
-        }
-        p.story {
-          margin-bottom: 15px;
-        }
-        h1 {
-          margin-bottom: 10px;
-        }
-        .downCv {
-          background-color: $colorPrimary !important;
-          color: $buttonPrimary !important;
-          border: 1px solid $buttonPrimary !important;
-          font-size: 1em !important;
-
-          &:hover {
-            color: $colorPrimary !important;
-            background-color: $buttonPrimary !important;
-          }
-        }
-      }
-    }
-  }
-  div.containerParent.five {
-    text-align: center;
-    margin-block: 80px 80px;
-    img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 15px;
-      object-position: 30% 0%;
-      border: 2px solid $buttonSecond;
-      border-radius: 20px;
-    }
-
-    div.col-md-4 {
-      padding: 10px 20px;
-
-      a {
-        display: inline-block;
-        width: 100%;
-      }
-    }
-    h3 {
-      margin-top: 20px;
-      background-color: $buttonPrimary;
-      color: $colorPrimary;
-      font-size: 1em;
-      font-weight: 600;
-      border-radius: 10px;
-      padding-block: 10px;
-      width: fit-content;
-      padding-inline: 20px;
-      margin-inline: auto;
-      color: $colorPrimary !important;
-      background-color: $buttonSecond !important;
-      border: 1px solid $buttonPrimary !important;
-      &:hover {
-        background-color: $colorPrimary !important;
-        color: $buttonPrimary !important;
-      }
-    }
-    button.showAll {
-      background-color: $colorPrimary !important;
-      color: $buttonPrimary !important;
-      border: 1px solid $buttonPrimary !important;
-      font-size: 1em !important;
-
-      &:hover {
-        color: $colorPrimary !important;
-        background-color: $buttonPrimary !important;
-      }
-    }
-    p {
-      font-size: 1.6em;
-      font-weight: 600;
-    }
-  }
-  div.containerParent.six {
-    background-color: $buttonSecond;
-    color: $colorPrimary;
-    div.container.six {
-      div.row.info {
-        div.col-md-6 {
-          padding: 20px;
-          &.first {
-            padding-left: 50px;
-          }
-        }
-        h1 {
-          color: inherit;
-          margin-bottom: 10px;
-          line-height: 90%;
-        }
-
-        button.hireMe {
-          border-radius: 0 !important;
-          background-color: #fff !important;
-          color: #333 !important;
-          border-radius: 5px !important;
-          width: fit-content;
-          padding: 10px 20px;
-          font-weight: 800;
-          font-size: 0.9em;
-          &:hover {
-            background-color: #ddd !important;
-          }
-        }
-      }
-    }
-  }
+ 
   div.containerParent.seven {
     margin-block: 80px;
     h3.testHead {
@@ -419,22 +277,10 @@ main {
 }
 footer {
   div.containerParent.nine {
+    width: 100%;
     div.container.nine {
       p {
         font-size: 1.2em;
-      }
-      div.col-md-6.second {
-        a {
-          i,
-          svg {
-            display: inline-block;
-            padding: 8px;
-            font-size: 1.8em;
-            border: 3px solid #aaa;
-            border-radius: 50%;
-            margin-inline: 10px;
-          }
-        }
       }
     }
   }
@@ -643,10 +489,7 @@ div.toTop {
   div.containerParent.nine {
     div.container.nine {
       div.col-md-6.first {
-        justify-content: start !important;
-      }
-      div.col-md-6.second {
-        justify-content: end !important;
+        justify-content: center !important;
       }
     }
   }

@@ -171,141 +171,6 @@ header div.containerParent.two button.visitWork {
   width: fit-content;
 }
 
-main div.containerParent.three {
-  text-align: center;
-  background-color: white;
-  z-index: 2;
-}
-main div.containerParent.three .skill {
-  border: 2px solid #6c6196;
-  border-radius: 30px;
-  margin-bottom: 20px;
-  padding-block: 15px;
-}
-main div.containerParent.three .skill h3 {
-  font-weight: 800;
-  font-size: 1.3em;
-}
-main div.containerParent.four {
-  margin-block: 40px;
-}
-main div.containerParent.four div.container.four {
-  margin-top: 80px;
-  font-size: 1.1em;
-}
-main div.containerParent.four div.container.four div.col-md-4 {
-  background-image: url(../images/man.png);
-  background-size: contain;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  min-height: 400px;
-  margin-bottom: 10px;
-  padding: 0;
-}
-main div.containerParent.four div.container.four div.col-md-8 p {
-  margin: 0;
-}
-main div.containerParent.four div.container.four div.col-md-8 p.story {
-  margin-bottom: 15px;
-}
-main div.containerParent.four div.container.four div.col-md-8 h1 {
-  margin-bottom: 10px;
-}
-main div.containerParent.four div.container.four div.col-md-8 .downCv {
-  background-color: #fff !important;
-  color: #6c6196 !important;
-  border: 1px solid #6c6196 !important;
-  font-size: 1em !important;
-}
-main div.containerParent.four div.container.four div.col-md-8 .downCv:hover {
-  color: #fff !important;
-  background-color: #6c6196 !important;
-}
-main div.containerParent.five {
-  text-align: center;
-  margin-block: 80px 80px;
-}
-main div.containerParent.five img {
-  width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px;
-  -o-object-position: 30% 0%;
-     object-position: 30% 0%;
-  border: 2px solid #4a3c81;
-  border-radius: 20px;
-}
-main div.containerParent.five div.col-md-4 {
-  padding: 10px 20px;
-}
-main div.containerParent.five div.col-md-4 a {
-  display: inline-block;
-  width: 100%;
-}
-main div.containerParent.five h3 {
-  margin-top: 20px;
-  background-color: #6c6196;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 600;
-  border-radius: 10px;
-  padding-block: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-inline: 20px;
-  margin-inline: auto;
-  color: #fff !important;
-  background-color: #4a3c81 !important;
-  border: 1px solid #6c6196 !important;
-}
-main div.containerParent.five h3:hover {
-  background-color: #fff !important;
-  color: #6c6196 !important;
-}
-main div.containerParent.five button.showAll {
-  background-color: #fff !important;
-  color: #6c6196 !important;
-  border: 1px solid #6c6196 !important;
-  font-size: 1em !important;
-}
-main div.containerParent.five button.showAll:hover {
-  color: #fff !important;
-  background-color: #6c6196 !important;
-}
-main div.containerParent.five p {
-  font-size: 1.6em;
-  font-weight: 600;
-}
-main div.containerParent.six {
-  background-color: #4a3c81;
-  color: #fff;
-}
-main div.containerParent.six div.container.six div.row.info div.col-md-6 {
-  padding: 20px;
-}
-main div.containerParent.six div.container.six div.row.info div.col-md-6.first {
-  padding-left: 50px;
-}
-main div.containerParent.six div.container.six div.row.info h1 {
-  color: inherit;
-  margin-bottom: 10px;
-  line-height: 90%;
-}
-main div.containerParent.six div.container.six div.row.info button.hireMe {
-  border-radius: 0 !important;
-  background-color: #fff !important;
-  color: #333 !important;
-  border-radius: 5px !important;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px 20px;
-  font-weight: 800;
-  font-size: 0.9em;
-}
-main div.containerParent.six div.container.six div.row.info button.hireMe:hover {
-  background-color: #ddd !important;
-}
 main div.containerParent.seven {
   margin-block: 80px;
 }
@@ -384,17 +249,11 @@ main form .title {
   margin-top: 20px !important;
 }
 
+footer div.containerParent.nine {
+  width: 100%;
+}
 footer div.containerParent.nine div.container.nine p {
   font-size: 1.2em;
-}
-footer div.containerParent.nine div.container.nine div.col-md-6.second a i,
-footer div.containerParent.nine div.container.nine div.col-md-6.second a svg {
-  display: inline-block;
-  padding: 8px;
-  font-size: 1.8em;
-  border: 3px solid #aaa;
-  border-radius: 50%;
-  margin-inline: 10px;
 }
 
 div.animation {
@@ -566,10 +425,7 @@ div.toTop a {
     transform: translate(-70%, -50%) !important;
   }
   div.containerParent.nine div.container.nine div.col-md-6.first {
-    justify-content: start !important;
-  }
-  div.containerParent.nine div.container.nine div.col-md-6.second {
-    justify-content: end !important;
+    justify-content: center !important;
   }
 }
 @media (min-width: 992px) {
